@@ -66,7 +66,7 @@ namespace TechJobs.ViewModels
 
             foreach (CoreCompetency field in jobData.CoreCompetencies.ToList())
             {
-                CoreCompetency.Add(new SelectListItem
+                CoreCompetencies.Add(new SelectListItem
                 {
                     Value = field.ID.ToString(),
                     Text = field.Value
@@ -75,7 +75,7 @@ namespace TechJobs.ViewModels
 
             foreach (PositionType field in jobData.PositionTypes.ToList())
             {
-                PositionType.Add(new SelectListItem
+                PositionTypes.Add(new SelectListItem
                 {
                     Value = field.ID.ToString(),
                     Text = field.Value
