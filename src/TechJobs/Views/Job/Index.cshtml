@@ -7,7 +7,7 @@
 
     <h3>@Model.Columns.Count Result(s)</h3>
 
-    @foreach (JobFieldType job in Enum.GetValues(typeof(JobFieldType)))
+    foreach (JobFieldType job in Enum.GetValues(typeof(JobFieldType)))
     {
         <table class="job-listing">
             <tr>
