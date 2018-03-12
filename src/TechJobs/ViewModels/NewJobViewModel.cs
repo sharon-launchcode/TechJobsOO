@@ -9,6 +9,7 @@ namespace TechJobs.ViewModels
     public class NewJobViewModel
     {
         [Required]
+        [StringLength(30, MinimumLength = 3, ErrorMessage = "Name must be no fewer than three letters, max 30")]
         public string Name { get; set; }
 
         [Required]
