@@ -37,6 +37,17 @@ namespace TechJobs.Controllers
             // TODO #6 - Validate the ViewModel and if valid, create a 
             // new Job and add it to the JobData data store. Then
             // redirect to the Job detail (Index) action/view for the new Job.
+            if (ModelState.IsValid)
+            {
+                
+                
+                Job newJob = new Job
+                {
+                    //
+                };
+                jobData.Jobs.Add(newJob);
+                return Redirect("Index");
+            }
 
             return View(newJobViewModel);
         }
