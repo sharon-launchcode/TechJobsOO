@@ -39,12 +39,14 @@ namespace TechJobs.Controllers
             // redirect to the Job detail (Index) action/view for the new Job.
             if (ModelState.IsValid)
             {
-                
-                
+
+
                 Job newJob = new Job
                 {
-                    //
-                };
+                   //
+  
+            
+                 };
                 jobData.Jobs.Add(newJob);
                 return Redirect("Index");
             }
