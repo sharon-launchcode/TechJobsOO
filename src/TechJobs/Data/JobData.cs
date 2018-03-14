@@ -34,6 +34,11 @@ namespace TechJobs.Data
             return instance;
         }
 
+        internal static void Add(Job job)
+        {
+            throw new NotImplementedException();
+        }
+
 
         /**
          * Return all Job objects in the data store
