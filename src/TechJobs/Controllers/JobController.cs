@@ -47,7 +47,7 @@ namespace TechJobs.Controllers
                 //Job.Employer = 
                 // Employer = 'Test',
                 //CoreCompetency = 'test',
-                // PositionType = 'test'
+                // PositionType = 'test' /
                 };
 
                 jobData.Jobs.Add(newJob);
