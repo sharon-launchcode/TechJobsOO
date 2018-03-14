@@ -35,7 +35,7 @@ namespace TechJobs.Controllers
         public IActionResult New(NewJobViewModel newJobViewModel)
         {
             // TODO #6 - Validate the ViewModel and if valid, create a 
-            // new Job and add it to the JobData data store. Then
+            // new Job and add it to the JobData data store. Then    
             // redirect to the Job detail (Index) action/view for the new Job.
             if (ModelState.IsValid)
             {
@@ -43,12 +43,11 @@ namespace TechJobs.Controllers
 
                 Job newJob = new Job
                 {
-                    //
-                    //Cat cat = new Cat { Age = 10, Name = "Fluffy" };
-                    // Location = 10,
-                    // Employer = 'Test',
-                     //CoreCompetency = 'test',
-                    // PositionType = 'test'
+
+                //Job.Employer = 
+                // Employer = 'Test',
+                //CoreCompetency = 'test',
+                // PositionType = 'test'
                 };
 
                 jobData.Jobs.Add(newJob);
