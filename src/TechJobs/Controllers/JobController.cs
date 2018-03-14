@@ -43,10 +43,14 @@ namespace TechJobs.Controllers
 
                 Job newJob = new Job
                 {
-                   //
-  
-            
-                 };
+                    //
+                    //Cat cat = new Cat { Age = 10, Name = "Fluffy" };
+                    // Location = 10,
+                    // Employer = 'Test',
+                     //CoreCompetency = 'test',
+                    // PositionType = 'test'
+                };
+
                 jobData.Jobs.Add(newJob);
                 return Redirect("Index");
             }
