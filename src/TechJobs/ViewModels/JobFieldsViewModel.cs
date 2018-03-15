@@ -4,6 +4,10 @@ using TechJobs.Models;
 
 namespace TechJobs.ViewModels
 {
+    public class BaseViewModel
+    {
+        public JobFieldType Column { get; set; }
+    }
     public class JobFieldsViewModel
     {
         // TODO #7.2 - Extract members common to SearchJobsViewModel
