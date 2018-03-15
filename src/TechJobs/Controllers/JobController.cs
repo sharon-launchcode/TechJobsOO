@@ -48,8 +48,8 @@ namespace TechJobs.Controllers
                 //there is no ID associated with name
                 Employer = jobData.Employers.Find(newJobViewModel.EmployerID),
                 CoreCompetency = jobData.CoreCompetencies.Find(newJobViewModel.CoreCompetencyID),
-                Location = jobData.Locations.Find(newJobViewModel.LocationID)
-                //PositionType =  PositionTypes.Find(newJobViewModel.PositionTypeID)
+                Location = jobData.Locations.Find(newJobViewModel.LocationID),
+                PositionType =  jobData.PositionTypes.Find(newJobViewModel.PositionTypeID)
                 //Check LOWER CASE newJobViewModel
                     // Employer = 'Test',
                     //CoreCompetency = 'test',
