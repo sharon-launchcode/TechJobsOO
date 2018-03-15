@@ -51,6 +51,7 @@ namespace TechJobs.Controllers
                 CoreCompetency = jobData.CoreCompetencies.Find(newJobViewModel.CoreCompetencyID),
                 Location = jobData.Locations.Find(newJobViewModel.LocationID),
                 PositionType =  jobData.PositionTypes.Find(newJobViewModel.PositionTypeID)
+                //
                 //Check LOWER CASE newJobViewModel
                     // Employer = 'Test',
                     //CoreCompetency = 'test',
@@ -58,7 +59,7 @@ namespace TechJobs.Controllers
                 };
 
                 jobData.Jobs.Add(newJob);
-                return Redirect("/Index?newJob=" + newJob.ID);
+                return Redirect("/job?id=" + newJob.ID);
                 //I need a string url for redirect which also incporates newJob
             }
 
