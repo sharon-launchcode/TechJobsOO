@@ -58,7 +58,7 @@ namespace TechJobs.Controllers
                 };
 
                 jobData.Jobs.Add(newJob);
-                return Redirect("Index");
+                return Redirect("/Index?newJob=" + newJob.ID);
                 //I need a string url for redirect which also incporates newJob
             }
 
