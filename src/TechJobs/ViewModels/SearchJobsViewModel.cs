@@ -9,6 +9,9 @@ namespace TechJobs.ViewModels
     {
         // TODO #7.1 - Extract members common to JobFieldsViewModel
         // to BaseViewModel
+        //common is JobFieldType Column
+        //common is List Field Type Columns
+        //common is Title
 
         // The search results
         public List<Job> Jobs { get; set; }
