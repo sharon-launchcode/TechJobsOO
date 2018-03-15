@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿
+using Microsoft.AspNetCore.Mvc;
 using TechJobs.Data;
 using TechJobs.Models;
 using TechJobs.ViewModels;
@@ -58,6 +59,7 @@ namespace TechJobs.Controllers
 
                 jobData.Jobs.Add(newJob);
                 return Redirect("Index");
+                //I need a string url for redirect which also incporates newJob
             }
 
             return View(newJobViewModel);
