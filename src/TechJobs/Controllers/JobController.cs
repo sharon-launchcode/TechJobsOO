@@ -43,11 +43,15 @@ namespace TechJobs.Controllers
 
                 Job newJob = new Job
                 {
-
+                //IMPORTANT the FIND method is working for a new job..... similar to an INSERT command?
                 Employer = jobData.Employers.Find(newJobViewModel.EmployerID)
-                // Employer = 'Test',
-                //CoreCompetency = 'test',
-                // PositionType = 'test' /
+                //CoreCompetency = jobData.CoreCompetencies.Find(newJobViewModel.CoreCompetencyID)
+                //Location = .Locations.Find(newJobViewModel.LocationID)
+                //PositionType =  PositionTypes.Find(newJobViewModel.PositionTypeID)
+                //Check LOWER CASE newJobViewModel
+                    // Employer = 'Test',
+                    //CoreCompetency = 'test',
+                    // PositionType = 'test' /
                 };
 
                 jobData.Jobs.Add(newJob);
