@@ -44,7 +44,7 @@ namespace TechJobs.Controllers
                 Job newJob = new Job
                 {
 
-                //Job.Employer = 
+                Employer = jobData.Employers.Find(newJobViewModel.EmployerID)
                 // Employer = 'Test',
                 //CoreCompetency = 'test',
                 // PositionType = 'test' /

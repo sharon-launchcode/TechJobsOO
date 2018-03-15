@@ -42,6 +42,7 @@ namespace TechJobs.ViewModels
                 Employers.Add(new SelectListItem {
                     Value = field.ID.ToString(),
                     Text = field.Value
+
                 });
             }
             foreach (Location field in jobData.Locations.ToList())
